@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+
+<body>
+    <header>
+        <h1>EXPENSE TRACKER</h1>
+    </header>
+    <main>
+        <div class="flex">
+            <div id="budgetform" class="budgetform">
+                <label for="budget">Budget</label>
+                <input type="number" placeholder="enter amount" id="budget">
+                <button onclick="addbudget()">set budget</button>
+            </div>
+            <div id="categoryform" class="categoryform">
+                <label for="expensename">Expense Name</label>
+                <input type="text" id="expensename">
+                <label for="amount">Amount</label>
+                <input type="number" id="expenseamount">
+                <label for="date">Date</label>
+                <input type="date" id="expensedate">
+                <button onclick="addExpense()">Add Expense</button>
+            </div>
+        </div>
+        <div class="mybudget">My budget $:<span id="initialbudget"></span></div>
+        <div id="expenseslist" class="expenseslist">
+            <h2>Expenses List</h2>
+            <div id="expensesitem"></div>
+        </div>
+        <div class="rem-budget">
+            <div>Your remaining budget is $</div>
+            <div id="remainingbudget"></div>
+
+        </div>
+
+    </main>
+</body>
+<script src="expense.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(53, 53, 65);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+}
+.budgetform{
+    margin: 20px 0px;
+}
+.categoryform{
+    margin: 20px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+header {
+    text-align: center;
+}
+.expenseslist {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.addexpenses {
+    display: flex;
+    background-color:#161616;
+    padding: 2px 4px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+.rem-budget{
+    margin-top: 50px;
+    border: 1px solid;
+    padding: 20px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+#remainingbudget{
+    color: red;
+}
+
+.expense-list{
+    background-color: #161616;
+    border: 1px solid #838080;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input, button{
+    padding: 4px 8px;
+    border-radius: 4px;
+    outline: none;
+}
